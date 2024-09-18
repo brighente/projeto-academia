@@ -115,7 +115,7 @@ li:hover{
 }
 
 .intro-container{
-    width: 50%;
+    width: 60%;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -139,6 +139,10 @@ li:hover{
     font-weight: bolder;
 }
 
+.intro-content b{
+    color: var(--cor02);
+}
+
 .intro-content button{
     width: 50%;
     height: 40px;
@@ -153,6 +157,14 @@ li:hover{
 
 .intro-content button:hover{
     background-color: transparent;
+}
+
+.intro-text{
+    color: var(--cor05);
+    font-family: var(--fonte03);
+    font-weight: 100;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
 }
 
 .welcome-container{
