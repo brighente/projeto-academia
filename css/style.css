@@ -41,7 +41,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 300px;
+    padding: 0 270px;
     background-color: var(--cor07);
     z-index: 2;
 }
@@ -66,11 +66,11 @@ header{
     color: var(--cor02);
 }
 
-nav{
+.header-nav{
     width: 60%;
 }
 
-ul{
+.header-ul{
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -95,6 +95,11 @@ li:hover{
 
 .nav-icon:hover{
     color: var(--cor02);
+}
+
+#menu-icon{
+    display: none;
+    color: var(--cor00);
 }
 
 .modal{
@@ -177,15 +182,21 @@ li:hover{
 
 .welcome-text{
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 15px;
-    padding-left: 150px;
+    padding-left: 100px;
 }
 
-.welcome-text h2{
+.welcome-text-content{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.welcome-text-content h2{
     font-family: var(--fonte02);
     color: var(--cor00);
     text-align: left;
@@ -193,11 +204,11 @@ li:hover{
     font-style: italic;
 }
 
-.welcome-text b{
+.welcome-text-content b{
     color: var(--cor02);
 }
 
-.welcome-text span{
+.welcome-text-content span{
     width: 80%;
     font-size: 1.25rem;
     color: var(--cor00);
@@ -207,9 +218,10 @@ li:hover{
     padding-bottom: 30px;
 }
 
-.welcome-text p{
+.welcome-text-content p{
     width: 80%;
     font-size: 1.25rem;
+    font-family: var(--fonte02);
     color: var(--cor05);
 }
 
@@ -218,7 +230,7 @@ li:hover{
     border: 1px solid rgba(0, 0, 0, 0.514);
 }
 
-.welcome-text button{
+.welcome-text-content button{
     width: 50%;
     height: 40px;
     border: 2px solid var(--cor01);
@@ -231,7 +243,7 @@ li:hover{
     margin-top: 30px;
 }
 
-.welcome-text button:hover{
+.welcome-text-content button:hover{
     background-color: transparent;
 }
 
@@ -253,6 +265,39 @@ li:hover{
     height:100%;
 }
 
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: var(--cor08);
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo h1{
+    color: var(--cor00);
+    font-style: italic;
+    font-family: var(--fonte02);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.footer-logo h1:hover{
+    color: var(--cor02);
+}
+
+.footer-logo-span{
+    color: var(--cor02);
+}
+
+.footer-navbar{
+    display: none;
+}
+
 
 
 @media(max-width: 1280px){
@@ -261,25 +306,103 @@ li:hover{
         padding: 0 150px;
     }
 
-    .welcome-text{
+    .intro-text{
+        text-align: center;
+    }
+
+    .welcome-text-content{
         align-items: center;
-        padding-left: 50px;
+        row-gap: 8px;
     }
 
-    .welcome-text span{
+    .welcome-text-content span{
         text-align: center;
+        width: 100%;
+        font-size: 1.2rem;
+        padding-bottom: 0px;
     }
 
-    .welcome-text p{
+    .welcome-text-content p{
         text-align: center;
+        width: 100%;
+        font-size: 1.2rem;
     }
 
-    .welcome-text h2{
+    .welcome-text-content h2{
         text-align: center;
+        font-size: 2.5rem;
     }
 
     .square-border{
         height: 80%;
+    }
+
+}
+
+@media(max-width: 1024px){
+
+    header{
+        justify-content: space-around;
+    }
+
+    .header-ul{
+        display: none;
+    }
+
+    .header-nav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #menu-icon{
+        display: flex;
+        font-size: 1.5rem;
+        align-items: center;
+    }
+
+    #menu-icon:hover{
+        color: var(--cor02);
+    }
+
+    .intro-content h1{
+        font-size: 5rem;
+        padding-bottom: 10px;
+    }
+
+    .intro-text{
+        font-size: 1.5rem;
+    }
+
+    .welcome-text h2{
+        font-size: 2rem;
+    }
+
+    .welcome-text span{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .welcome-text p{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .square-border{
+        width: 100%;
+        margin-left: -50px;
+    }
+
+    .footer-navbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
 }
