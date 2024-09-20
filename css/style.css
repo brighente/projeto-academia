@@ -466,6 +466,7 @@ footer{
 
     .square-border{
         height: 70%;
+        margin-left: 0px;
     }
 
     .welcome-text-content span{
@@ -481,7 +482,7 @@ footer{
     }
 }
 
-@media(max-width: 425px){
+@media(max-width: 450px){
 
    #menu-icon{
     display: none;
@@ -522,8 +523,45 @@ footer{
    }
 
    .welcome-container{
-    height: 75vh;
+    height: 85vh;
     padding: 0 30px;
+    position: relative;
+   }
+
+   .welcome-card{
+    position: absolute;
+    top: 41.3%;
+    left: 50%;
+
+    transform: translate(-50%, 0%);
+
+    padding: 0px;
+    height: 69%;
+   }
+
+   .square-border{
+    border-bottom: 0px;
+   }
+
+   .welcome-img{
+    height: 100%;
+   }
+
+   .welcome-text{
+    width: 100%;
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+   }
+
+   .welcome-text-content{
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+
+    top: 7%;
    }
 
    .welcome-text-content h1{
@@ -535,7 +573,7 @@ footer{
    }
 
    .welcome-text-content span{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
    }
 
    .welcome-text-content button{
@@ -547,5 +585,14 @@ footer{
 
    #text-1{
     display: none;
+   }
+
+   footer{
+    background-color: #0F1922;
+    color: var(--cor00);
+   }
+
+   .footer-ico{
+    color: var(--cor00);
    }
 } 
