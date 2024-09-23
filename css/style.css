@@ -27,6 +27,7 @@
     --cor06: #232b2b;
     --cor07: #272d3467;
     --cor08: #686467;
+    --cor09: #0F1922;
 
     --fonte01: 'Playfair Display';
     --fonte02: 'Poppins';
@@ -112,7 +113,7 @@ li:hover{
 .home-container{
     width: 100%;
     height: 110vh;
-    background-image: url('../media/gym-bg1.jpg');
+    /* background-image: url('../media/gym-bg1.jpg'); */
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -266,10 +267,92 @@ li:hover{
     height:100%;
 }
 
+.programs-container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../media/halter-background.jpg'); */
+    background-size: cover;
+}
+
+.programs-content{
+    width: 60%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    z-index: 1;
+}
+
+.programs-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.programs-card h3{
+    color: var(--cor00);
+}
+
+.programs-button{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.programs-card button{
+    width: 50%;
+    border: 2px solid var(--cor01);
+    background-color: var(--cor02);
+    color: var(--cor00);
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: var(--fonte02);
+    cursor: pointer;
+}
+
+.programs-card button:hover{
+    background-color: transparent;
+}
+
+#programs-card-1{
+    background-image: url('../media/academia.jpg');
+    background-size: cover;
+    background-position: right center;
+}
+
+
+
+
+#programs-card-1:hover > .programs-button{
+    display: block;
+}
+
+#programs-card-2:hover > .programs-button{
+    display: block;
+}
+
+#programs-card-3:hover > .programs-button{
+    display: block;
+}
+
+
+
+
+.modal-programs{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}
+
 footer{
     height: 200px;
     width: 100%;
-    background-color: var(--cor08);
+    background-color: var(--cor09);
 }
 
 .footer-content{
@@ -282,6 +365,7 @@ footer{
 
 .footer-content p{
     font-size: 1.2rem;
+    color: var(--cor00);
 }
 
 .footer-content span{
@@ -291,11 +375,11 @@ footer{
 }
 
 .footer-ico{
-    color: black;
+    color: var(--cor00);
 }
 
 .footer-ico:hover{
-    color: var(--cor00);
+    color: var(--cor02);
 }
 
 .footer-logo h1{
@@ -314,7 +398,6 @@ footer{
 .footer-navbar{
     display: none;
 }
-
 
 
 @media(max-width: 1280px){
@@ -355,6 +438,7 @@ footer{
     }
 
 }
+
 
 @media(max-width: 1024px){
 
@@ -415,6 +499,7 @@ footer{
     }
 
 }
+
 
 @media(max-width: 768px){
 
@@ -481,6 +566,7 @@ footer{
         font-size: 2.3rem;
     }
 }
+
 
 @media(max-width: 450px){
 
@@ -585,14 +671,5 @@ footer{
 
    #text-1{
     display: none;
-   }
-
-   footer{
-    background-color: #0F1922;
-    color: var(--cor00);
-   }
-
-   .footer-ico{
-    color: var(--cor00);
    }
 } 
