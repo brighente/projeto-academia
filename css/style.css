@@ -740,6 +740,14 @@ footer{
     display: none;
    }
 
+   .programs-container{
+    height: 85vh;
+   }
+
+   .modal-programs{
+    height: 85vh;
+   }
+
    .programs-container h1{
     text-align: center;
     font-size: 2rem;
