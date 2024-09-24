@@ -113,7 +113,7 @@ li:hover{
 .home-container{
     width: 100%;
     height: 110vh;
-    /* background-image: url('../media/gym-bg1.jpg'); */
+    background-image: url('../media/gym-bg1.jpg');
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -271,28 +271,69 @@ li:hover{
     width: 100%;
     height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-image: url('../media/halter-background.jpg'); */
+    background-image: url('../media/halter-background.jpg');
     background-size: cover;
 }
 
+.programs-container h1{
+    color: var(--cor00);
+    font-style: italic;
+    font-family: var(--fonte02);
+    font-weight: bolder;
+    font-size: 3rem;
+    z-index: 1;
+    margin-bottom: 25px;
+}
+
+.programs-container b{
+    color: var(--cor02);
+}
+
+.programs-container p{
+    color: var(--cor00);
+    z-index: 1;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+    font-family: var(--fonte02);
+}
+
 .programs-content{
-    width: 60%;
+    width: 70%;
     height: 60%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    z-index: 1;
+    column-gap: 30px;
+    z-index: 0;
 }
 
 .programs-card{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border: 2px solid var(--cor02);
 }
 
 .programs-card h3{
     color: var(--cor00);
+    text-align: center;
+    font-family: var(--fonte02);
+    font-weight: bold;
+}
+
+.programs-card span{
+    color: var(--cor03);
+    text-align: center;
+    font-family: var(--fonte02);
+    font-weight: bold;
+}
+
+.programs-text-2{
+    margin-bottom: 15px;
 }
 
 .programs-button{
@@ -312,6 +353,7 @@ li:hover{
     font-size: 1rem;
     font-family: var(--fonte02);
     cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .programs-card button:hover{
@@ -319,33 +361,39 @@ li:hover{
 }
 
 #programs-card-1{
-    background-image: url('../media/academia.jpg');
+    background-image: url('../media/male-athlete-training-hard-gym.jpg');
     background-size: cover;
-    background-position: right center;
+    background-position: 80% center;
 }
 
+#programs-card-2{
+    background-image: url('../media/seo-treinamento-funcional-estresse.jpg');
+    background-size: cover;
+    background-position: 30% center;
+}
 
-
+#programs-card-3{
+    background-image: url('../media/crossfit.jpg');
+    background-size: cover;
+    background-position: 40% center;
+}
 
 #programs-card-1:hover > .programs-button{
-    display: block;
+    display: flex;
 }
 
 #programs-card-2:hover > .programs-button{
-    display: block;
+    display: flex;
 }
 
 #programs-card-3:hover > .programs-button{
-    display: block;
+    display: flex;
 }
-
-
-
 
 .modal-programs{
     width: 100%;
     height: 90vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.623);
     position: absolute;
 }
 
@@ -469,9 +517,21 @@ footer{
         width: 100%;
     }
 
+    .welcome-text button{
+        width: 50%;
+    }
+
     .square-border{
         width: 100%;
         margin-left: -50px;
+    }
+
+    .programs-content{
+        width: 80%;
+    }
+
+    .programs-card button{
+        width: 60%;
     }
 
     footer{
@@ -565,6 +625,10 @@ footer{
     .welcome-text-content h1{
         font-size: 2.3rem;
     }
+
+    .programs-card button{
+        width: 80%;
+    }
 }
 
 
@@ -652,14 +716,17 @@ footer{
 
    .welcome-text-content h1{
     font-size: 1.5rem;
+    width: 90%;
    }
 
    .welcome-text-content p{
     font-size: 0.8rem;
+    width: 90%;
    }
 
    .welcome-text-content span{
     font-size: 0.9rem;
+    width: 90%;
    }
 
    .welcome-text-content button{
@@ -671,5 +738,50 @@ footer{
 
    #text-1{
     display: none;
+   }
+
+   .programs-container h1{
+    text-align: center;
+    font-size: 2rem;
+   }
+
+   .programs-container p{
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+   }
+
+   .programs-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    height: 70%;
+   }
+
+   .programs-card{
+    height: 300px;
+   }
+
+   .programs-card h3{
+    margin-bottom: 10px;
+   }
+
+   .programs-card span{
+    display: none;
+   }
+
+   .programs-card button{
+    width: 60%;
+   }
+
+   #programs-card-1{
+    background-position: center center;
+   }
+
+   #programs-card-2{
+    background-position: top;
+   }
+
+   #programs-card-3{
+    background-position: center 80%;
    }
 } 
