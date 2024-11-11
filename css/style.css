@@ -98,7 +98,7 @@ li:hover{
     color: var(--cor02);
 }
 
-#menu-icon{
+#menuIcon{
     display: none;
     color: var(--cor00);
 }
@@ -577,13 +577,14 @@ footer{
         justify-content: flex-end;
     }
 
-    #menu-icon{
+    #menuIcon{
         display: flex;
         font-size: 1.5rem;
         align-items: center;
+        cursor: pointer;
     }
 
-    #menu-icon:hover{
+    #menuIcon:hover{
         color: var(--cor02);
     }
 
@@ -634,7 +635,7 @@ footer{
 
 @media(max-width: 450px){
 
-   #menu-icon{
+   #menuIcon{
     display: none;
    }
 
